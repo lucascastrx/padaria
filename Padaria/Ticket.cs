@@ -9,9 +9,15 @@ namespace Padaria
     internal class Ticket
     {
         public int Id { get; set; }
-        public List<ProductTicket> ProductTickets { get; set; }
-        public Client Client { get; set; }
-        public PaymentType PaymentType { get; set; }
+
+        private List<ProductTicket> _productTickets = [];
+        public List<ProductTicket> ProductTickets {
+            get {
+                return _productTickets;
+            }
+        }
+        public Customer Client { get; set; }
+        //public PaymentType PaymentType { get; set; }
 
         public double TotalValue()
         {
@@ -35,6 +41,15 @@ namespace Padaria
             if (ticket == null)
                 throw new Exception("Product not found.");
             return ProductTickets.Remove(ticket);
+        }
+
+        public void ClientPoints()
+        {
+            if(Client is LoyalCustomer)
+            {
+                var loyal = (LoyalCustomer)Client;
+                loyal.CalculatePoints(TotalValue());
+            }
         }
         
 

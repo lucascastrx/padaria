@@ -8,5 +8,11 @@ namespace Padaria
 {
     internal class StandardCustomer : Customer
     {
+        public override void CalculatePoints(double PurchaseTotalPrice){}
+
+        public string ToString()
+        {
+            return $"Nome: {Name}";
+        }
     }
 }

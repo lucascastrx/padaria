@@ -13,6 +13,7 @@ namespace Padaria
         public Ticket Create(Ticket Data)
         {
             Data.Id = TICKET_ID++;
+            Data.ClientPoints();
             tickets.Add(Data);
             return Data;
 
@@ -40,7 +41,7 @@ namespace Padaria
             if (ticket == null)
                 throw new Exception("Ticket not found.");
             ticket.Client = data.Client;
-            ticket.PaymentType = data.PaymentType;
+            //ticket.PaymentType = data.PaymentType;
             return ticket;
 
         }
