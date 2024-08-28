@@ -17,7 +17,7 @@ namespace Padaria
             }
         }
         public Customer Client { get; set; }
-        //public PaymentType PaymentType { get; set; }
+        public FormasPagamento PaymentType { get; set; }
 
         public double TotalValue()
         {

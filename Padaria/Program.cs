@@ -18,9 +18,10 @@
 
                 var client = new LoyalCustomer() { Name = "Lucas", Cpf = "12345678903" };
                 Console.WriteLine(client.ToString());
+                var pagamento = new FormasPagamento() { name = "Credito", bandeira = "Mastercard" };
 
                 var ticketRepository = new TicketRepository();
-                var ticket = new Ticket() { Client = client };
+                var ticket = new Ticket() { Client = client, PaymentType = pagamento };
                 ticket.AddProduct(prodTicket);
                 ticket.AddProduct(secondPT);
                 ticketRepository.Create(ticket);
