@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\lucas\\.nuget\\packages\\": {}
+    "C:\\Users\\leoap\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucas\\source\\repos\\Padaria\\Padaria\\Padaria.csproj",
+      "projectUniqueName": "C:\\Users\\leoap\\source\\repos\\padaria\\Padaria\\Padaria.csproj",
       "projectName": "Padaria",
-      "projectPath": "C:\\Users\\lucas\\source\\repos\\Padaria\\Padaria\\Padaria.csproj",
-      "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucas\\source\\repos\\Padaria\\Padaria\\obj\\",
+      "projectPath": "C:\\Users\\leoap\\source\\repos\\padaria\\Padaria\\Padaria.csproj",
+      "packagesPath": "C:\\Users\\leoap\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leoap\\source\\repos\\padaria\\Padaria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leoap\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
