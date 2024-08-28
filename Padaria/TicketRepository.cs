@@ -39,8 +39,8 @@ namespace Padaria
             var ticket = tickets.Find(o => o.Id == Id);
             if (ticket == null)
                 throw new Exception("Ticket not found.");
-            ticket. = data.;
-            ticket. = data.;
+            ticket.Client = data.Client;
+            ticket.PaymentType = data.PaymentType;
             return ticket;
 
         }

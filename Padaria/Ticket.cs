@@ -15,13 +15,26 @@ namespace Padaria
 
         public double TotalValue()
         {
-            var amount = 0;
+            var amount = 0.0;
             foreach(var ticket in ProductTickets)
             {
-                amount += ticket.Value;
+                amount += ticket.Value();
             }
 
             return amount;
+        }
+
+        public void AddProduct(ProductTicket Obj)
+        {
+            ProductTickets.Add(Obj);
+        }
+
+        public bool RemoveProduct(int Id)
+        {
+            var ticket = ProductTickets.Find(o => o.Id == Id);
+            if (ticket == null)
+                throw new Exception("Product not found.");
+            return ProductTickets.Remove(ticket);
         }
         
 

@@ -11,5 +11,10 @@ namespace Padaria
         public int Id { get; set; }
         public Product Product { get; set; }
         public int Quantity { get; set; }
+
+        public double Value()
+        {
+            return Product.Price * Quantity;
+        }
     }
 }
