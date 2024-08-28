@@ -26,7 +26,7 @@ namespace Padaria
             formaspagamentos.Remove(formaspagamento);
         }
 
-        public Product Read(int Id)
+        public FormasPagamento Read(int Id)
         {
             var formaspagamento = formaspagamentos.Find(o => o.Id == Id);
             if (formaspagamento == null)
@@ -34,7 +34,7 @@ namespace Padaria
             return formaspagamento;
         }
 
-        public Product Update(int Id, FormasPagamento data)
+        public FormasPagamento Update(int Id, FormasPagamento data)
         {
             var formaspagamento = formaspagamentos.Find(o => o.Id == Id);
             if (formaspagamento == null)

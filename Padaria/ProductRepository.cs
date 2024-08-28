@@ -9,7 +9,7 @@ namespace Padaria
     internal class ProductRepository : IRepository<int, Product>
     {
         private List<Product> products = [];
-        private static int PRODUCT_ID;
+        private static int PRODUCT_ID = 1;
         public Product Create(Product Data)
         {
             Data.Id = PRODUCT_ID++;

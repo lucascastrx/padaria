@@ -8,7 +8,7 @@ namespace Padaria
 {
     internal class FormasPagamento
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string name { get; set; }
         public string bandeira { get; set; }
     }

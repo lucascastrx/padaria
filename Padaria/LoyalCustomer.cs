@@ -8,12 +8,30 @@ namespace Padaria
 {
     internal class LoyalCustomer : Customer
     {
-        public string Cpf { get; set; } = "";
+        private string _cpf;
+        public string Cpf
+        {
+            get
+            {
+                return this._cpf;
+            }
+
+            set {
+                if (value == null || value == "" || value.Length != 11)
+                    throw new ArgumentException("Cpf error");
+                this._cpf = value;
+            }
+        }
         public double Points { get; set; } = 0.0;
 
-        public void CalculatePoints(double PurchaseTotalPrice)
+        public override void CalculatePoints(double PurchaseTotalPrice)
         {
             Points = PurchaseTotalPrice * 0.10;
+        }
+
+        public string ToString()
+        {
+            return $"Nome: {Name}, CPF: {Cpf}, Pontos: {Points}";
         }
     }
 }
